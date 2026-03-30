@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mega Shop V3</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+
+    <!-- LEFT LOGO -->
+    <div class="logo">Mega Shop 🛒</div>
+
+    <!-- MENU -->
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="#">Categories</a>
+        <a href="offers.html">Offers</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="search-box">
+        <input type="text" placeholder="Search products...">
+        <button>Search</button>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+        <div class="cart">🛒</div>
+        <button class="login-btn">Login</button>
+    </div>
+
+</header>
+
+
+
+
+
+
+<div class="announcement-bar">
+    <marquee>🎉 স্পেশাল অফার: ২০০০ টাকার বেশি অর্ডারে সারা বাংলাদেশে ডেলিভারি একদম ফ্রি! 🎉</marquee>
+</div>
+
+
+
+
+
+
+
+<!-- LOGIN -->
+<section id="login" class="page">
+    <h2>Login / Register</h2>
+    <input id="user" placeholder="Username">
+    <input id="pass" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <button onclick="register()">Register</button>
+</section>
+
+<!-- HOME -->
+<section id="home" class="page active"></section>
+
+<!-- WISHLIST -->
+<section id="wishlist" class="page"></section>
+
+<!-- CART -->
+<section id="cart" class="page"></section>
+
+<!-- ADMIN -->
+<section id="admin" class="page"></section>
+
+
+
+
+
+
+
+<section class="offer-banner">
+    <div class="banner-content">
+        <h2>Big Ramadan Sale! 🌙</h2>
+        <p>Get up to <span>50% OFF</span> on all electronics products.</p>
+        <button onclick="showPage('home')">Shop Now</button>
+    </div>
+</section>
+
+
+
+
+<section class="features">
+    <div class="feature-card">
+        <span>🚚</span>
+        <h4>Free Delivery</h4>
+        <p>On orders over $500</p>
+    </div>
+    <div class="feature-card">
+        <span>🛡️</span>
+        <h4>Secure Payment</h4>
+        <p>100% safe transactions</p>
+    </div>
+    <div class="feature-card">
+        <span>🎧</span>
+        <h4>24/7 Support</h4>
+        <p>Talk to us anytime</p>
+    </div>
+    <div class="feature-card">
+        <span>🔄</span>
+        <h4>Easy Returns</h4>
+        <p>7-day return policy</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+<section class="social-feed">
+    <h3>Follow Us on Instagram 📸</h3>
+    <div class="feed-grid">
+        <div class="feed-item"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300" alt="Feed 1"></div>
+        <div class="feed-item"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300" alt="Feed 2"></div>
+        <div class="feed-item"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300" alt="Feed 3"></div>
+        <div class="feed-item"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300" alt="Feed 4"></div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="shop-stats">
+    <div class="stat-item">
+        <h4>10K+</h4>
+        <p>Happy Customers</p>
+    </div>
+    <div class="stat-item">
+        <h4>500+</h4>
+        <p>Products Sold</p>
+    </div>
+    <div class="stat-item">
+        <h4>4.8 ⭐</h4>
+        <p>Average Rating</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="flash-sale">
+    <div class="sale-header">
+        <h3>⚡ Flash Sale - Ending Soon!</h3>
+        <div id="countdown">00:00:00:00</div>
+    </div>
+    <div class="sale-container">
+        <div class="card sale-card">
+            <span class="discount-badge">-20%</span>
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300" alt="Laptop">
+            <h3>Premium Macbook</h3>
+            <p><del>$1200</del> <span class="sale-price">$960</span></p>
+            <button onclick="addCart(101)">Add to Cart</button>
+        </div>
+
+        <div class="card sale-card">
+            <span class="discount-badge">-15%</span>
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300" alt="Phone">
+            <h3>iPhone 15 Pro</h3>
+            <p><del>$1000</del> <span class="sale-price">$850</span></p>
+            <button onclick="addCart(102)">Add to Cart</button>
+        </div>
+
+        <div class="card sale-card">
+            <span class="discount-badge">-30%</span>
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300" alt="Headphone">
+            <h3>Wireless Headphone</h3>
+            <p><del>$200</del> <span class="sale-price">$140</span></p>
+            <button onclick="addCart(103)">Add to Cart</button>
+        </div>
+
+       
+     
+    </div>
+</section>
+
+
+
+
+
+
+
+<section class="bogo-offers">
+    <h2 class="bogo-title">🎁 Buy 1 Get 1 Free Offers!</h2>
+    <div class="bogo-grid">
+        
+        <div class="bogo-card">
+            <div class="bogo-tag">BOGO</div>
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300" alt="Headphone">
+            <h3>Premium Headphone</h3>
+            <p>Buy this and get a <strong>Protective Case</strong> free!</p>
+            <span class="price">$150.00</span>
+            <button onclick="addCart(201)">Grab Offer</button>
+        </div>
+
+        <div class="bogo-card">
+            <div class="bogo-tag">BOGO</div>
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300" alt="Watch">
+            <h3>Smart Watch S8</h3>
+            <p>Buy this and get an <strong>Extra Strap</strong> free!</p>
+            <span class="price">$80.00</span>
+            <button onclick="addCart(202)">Grab Offer</button>
+        </div>
+
+        <div class="bogo-card">
+            <div class="bogo-tag">BOGO</div>
+            <img src="https://images.unsplash.com/photo-1527661591475-527312dd65f5?w=300" alt="Mouse">
+            <h3>Gaming Mouse</h3>
+            <p>Buy this and get a <strong>Mouse Pad</strong> free!</p>
+            <span class="price">$45.00</span>
+            <button onclick="addCart(203)">Grab Offer</button>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="about-social">
+    <div class="about-content">
+        <h3>কেন আমাদের থেকে কিনবেন?</h3>
+        <p>আমরা দীর্ঘ ৫ বছর ধরে বিশ্বস্ততার সাথে কাস্টমারদের কাছে অরিজিনাল ইলেকট্রনিক্স পণ্য পৌঁছে দিচ্ছি। আমাদের লক্ষ্য হলো সুলভ মূল্যে সেরা মানের গ্যাজেট নিশ্চিত করা।</p>
+    </div>
+    
+    <div class="social-links">
+        <h3>আমাদের সাথে যুক্ত থাকুন</h3>
+        <div class="icons">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">YouTube</a>
+            <a href="#" class="social-icon">WhatsApp</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="sold-gallery">
+    <h3>সফল ডেলিভারি করা পণ্যের গ্যালারি 🛍️</h3>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300" alt="Sold Laptop">
+            <span class="delivery-status">✅ Delivered</span>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300" alt="Sold Phone">
+            <span class="delivery-status">✅ Delivered</span>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300" alt="Sold Headphone">
+            <span class="delivery-status">✅ Delivered</span>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300" alt="Delivered Item">
+            <span class="delivery-status">✅ Delivered</span>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="bottom-info">
+    <div class="faq-section">
+        <h3>সাধারণ জিজ্ঞাসা (FAQ)</h3>
+        <details>
+            <summary>ডেলিভারি চার্জ কত?</summary>
+            <p>পটুয়াখালী শহরের ভেতরে ডেলিভারি ফ্রি, শহরের বাইরে ১০০ টাকা।</p>
+        </details>
+        <details>
+            <summary>প্রোডাক্ট রিটার্ন করা যাবে?</summary>
+            <p>হ্যাঁ, পণ্য হাতে পাওয়ার ৭ দিনের মধ্যে যেকোনো সমস্যায় রিটার্ন করা যাবে।</p>
+        </details>
+    </div>
+
+    <div class="payment-section">
+        <h3>We Accept</h3>
+        <div class="payment-icons">
+            <span class="pay-card">bKash</span>
+            <span class="pay-card">Nagad</span>
+            <span class="pay-card">Visa/MasterCard</span>
+            <span class="pay-card">Cash on Delivery</span>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="support-branch">
+    <div class="support-box">
+        <h3>২৪/৭ কাস্টমার সাপোর্ট 📞</h3>
+        <p>যেকোনো সমস্যায় আমাদের কল করুন অথবা ইমেইল করুন।</p>
+        <div class="support-info">
+            <span><strong>Hotline:</strong> +880 1900 000000</span>
+            <span><strong>Email:</strong> help@megashop.com</span>
+        </div>
+    </div>
+    
+    <div class="branch-box">
+        <h3>আমাদের শাখা সমূহ 📍</h3>
+        <div class="branch-list">
+            <p>🏙️ <strong>ঢাকা শাখা:</strong> ধানমন্ডি ২৭, ঢাকা।</p>
+            <p>🏙️ <strong>পটুয়াখালী শাখা:</strong> পটুয়াখালী চৌরাস্তা, পটুয়াখালী।</p>
+        </div>
+    </div>
+</section>
+
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+
+
+
+
+
+
+
+
+<section class="app-download">
+    <div class="app-text">
+        <h3>আমাদের অ্যাপ ডাউনলোড করুন 📱</h3>
+        <p>সেরা শপিং অভিজ্ঞতা পেতে আমাদের মোবাইল অ্যাপ ব্যবহার করুন। সরাসরি অর্ডার এবং দ্রুত নোটিফিকেশন পাবেন।</p>
+        <div class="download-btns">
+            <button class="store-btn">Google Play</button>
+            <button class="store-btn">App Store</button>
+        </div>
+    </div>
+    <div class="qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://megashop.com" alt="QR Code">
+        <p>Scan to Download</p>
+    </div>
+</section>
+
+<section class="trust-badges">
+    <div class="badge">💯 100% Original</div>
+    <div class="badge">🚀 Fast Shipping</div>
+    <div class="badge">🔒 Secure Data</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="owner-profile">
+    <div class="owner-container">
+        <div class="owner-image">
+            <img src="hero13.jpg" alt="Owner Photo" id="adminPhoto">
+        </div>
+        <div class="owner-details">
+            <span class="badge-admin">Founder & CEO</span>
+            <h2>মোঃ জাহিদ হাসান</h2>
+            <p class="owner-bio">
+                "স্বাগতম আমাদের মেগা শপে! আমি মোঃ জাহিদ হাসান, এই প্ল্যাটফর্মের প্রতিষ্ঠাতা। আমাদের লক্ষ্য হলো আপনাদের কাছে সঠিক মূল্যে সেরা ইলেকট্রনিক্স পণ্য পৌঁছে দেওয়া। দীর্ঘ 5 বছর ধরে আমরা আপনাদের সেবায় নিয়োজিত আছি।"
+            </p>
+            <div class="owner-meta">
+                <p>📍 <strong>পটুয়াখালী:</strong> পটুয়াখালী, বাংলাদেশ</p>
+                <p>✉️ <strong>ইমেইল:</strong> yourname@example.com</p>
+            </div>
+            <div class="signature">
+                <p>ধন্যবাদান্তে,</p>
+                <h4>মোঃ জাহিদ হাসান</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<footer class="main-footer">
+    <div class="footer-top">
+        <div class="footer-col">
+            <h3>MEGA SHOP 🛒</h3>
+            <p>মেগা  অনলাইন শপ। আমরা দিচ্ছি সাশ্রয়ী মূল্যে সেরা মানের সব ইলেকট্রনিক্স পণ্য ও গ্যাজেট।</p>
+            <div class="social-icons">
+                <a href="#">FB</a>
+                <a href="#">YT</a>
+                <a href="#">INS</a>
+                <a href="#">WA</a>
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li onclick="showPage('home')">হোম পেজ</li>
+                <li onclick="showPage('cart')">আমার কার্ট</li>
+                <li>অফার জোন</li>
+                <li>শর্তাবলী</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>কাস্টমার সাপোর্ট</h4>
+            <p>📍 পটুয়াখালী চৌরাস্তা, পটুয়াখালী।</p>
+            <p>📞 +880 1900 000000</p>
+            <p>✉️ support@megashop.com</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>নতুন সব অফারের আপডেট পেতে সাবস্ক্রাইব করুন।</p>
+            <div class="footer-subscribe">
+                <input type="email" placeholder="আপনার ইমেইল">
+                <button>OK</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 MEGA SHOP | Designed by Jahid Ahmed</p>
+        <div class="payment-methods">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="Paypal" width="50">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" width="40">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" width="40">
+        </div>
+    </div>
+</footer>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1632 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f5f5f5;
+}
+
+
+
+
+
+
+/* HEADER */
+header {
+    background: #111;
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* NAV MENU */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+/* SEARCH */
+.search-box {
+    display: flex;
+    margin: 0 20px;
+}
+
+.search-box input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+.search-box button {
+    padding: 8px 12px;
+    background: orange;
+    border: none;
+    cursor: pointer;
+}
+
+/* RIGHT SIDE */
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.login-btn {
+    background: orange;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background: darkorange;
+}
+
+
+
+
+
+
+.page{
+    display:none;
+    padding:20px;
+}
+
+.active{
+    display:block;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.card{
+    background:white;
+    padding:10px;
+    border-radius:10px;
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+
+.cart-item{
+    display:flex;
+    justify-content:space-between;
+    background:#fff;
+    padding:10px;
+    margin:5px 0;
+}
+
+
+/* Offer Banner Style */
+.offer-banner {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x400/?technology');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+.banner-content h2 { font-size: 40px; margin-bottom: 10px; }
+.banner-content p { font-size: 20px; }
+.banner-content span { color: #ffcc00; font-weight: bold; }
+.banner-content button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Features Section Style */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.feature-card {
+    padding: 20px;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    background: #f9f9f9;
+    transform: translateY(-5px);
+}
+
+.feature-card span { font-size: 40px; display: block; margin-bottom: 10px; }
+.feature-card h4 { margin-bottom: 5px; color: #333; }
+.feature-card p { color: #777; font-size: 14px; }
+
+
+
+
+
+
+
+
+
+
+/* About & Social Style */
+.about-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.about-content h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.about-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.social-links h3 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icon {
+    padding: 10px 15px;
+    background: #f1c40f;
+    color: #222;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.social-icon:hover {
+    background: #2c3e50;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* Bottom Info Style */
+.bottom-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    gap: 30px;
+}
+
+.faq-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: left;
+}
+
+.faq-section h3 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+details {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+summary {
+    font-weight: bold;
+    color: #333;
+}
+
+.payment-section {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.payment-section h3 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pay-card {
+    background: #2c3e50;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Support & Branch Style */
+.support-branch {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #fff;
+    border-top: 5px solid #f1c40f;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.support-box, .branch-box {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.support-box h3, .branch-box h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.support-info span {
+    display: block;
+    margin: 5px 0;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.branch-list p {
+    margin: 8px 0;
+    color: #555;
+}
+
+/* Back to Top Button Style */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #f1c40f;
+    color: #222;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: none; /* শুরুতে লুকানো থাকবে */
+    z-index: 1001;
+    transition: 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #2c3e50;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Social Feed Style */
+.social-feed {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.social-feed h3 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.feed-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feed-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.feed-item img:hover {
+    transform: scale(1.05);
+    filter: brightness(80%);
+}
+
+/* Stats Section Style */
+.shop-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+.stat-item h4 {
+    font-size: 30px;
+    color: #f1c40f;
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+/* App Download Style */
+.app-download {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.app-text { max-width: 500px; text-align: left; }
+.app-text h3 { font-size: 28px; margin-bottom: 15px; color: #f1c40f; }
+.app-text p { font-size: 16px; line-height: 1.6; opacity: 0.9; }
+
+.download-btns { display: flex; gap: 15px; margin-top: 20px; }
+.store-btn {
+    padding: 12px 25px;
+    border: 2px solid #f1c40f;
+    background: transparent;
+    color: #f1c40f;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.store-btn:hover { background: #f1c40f; color: #222; }
+
+.qr-code { text-align: center; background: white; padding: 15px; border-radius: 10px; color: #333; }
+.qr-code img { width: 120px; height: 120px; }
+.qr-code p { margin-top: 10px; font-weight: bold; font-size: 12px; }
+
+/* Trust Badges */
+.trust-badges {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    background: #eee;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+.badge { display: flex; align-items: center; gap: 8px; }
+
+
+
+
+
+
+
+
+/* Sold Products Gallery Style */
+.sold-gallery {
+    padding: 50px 20px;
+    background: #ffffff;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.sold-gallery h3 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.gallery-itemimg:hover {
+    transform: scale(1.05);
+}
+
+.delivery-status {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(39, 174, 96, 0.9);
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+
+
+
+/* --- Advanced Flash Sale Styling --- */
+.flash-sale {
+    background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    border: 1px solid #ffeaa7;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.sale-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.sale-header h3 {
+    font-size: 28px;
+    color: #2d3436;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* কাউন্টডাউন টাইমার ডিজাইন */
+#countdown {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffffff;
+    background: #d63031; /* লাল রং */
+    padding: 8px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(214, 48, 49, 0.3);
+    letter-spacing: 1px;
+}
+
+/* পন্যের কন্টেইনার (Smooth Scroll) */
+.sale-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    padding: 20px 5px;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox এর জন্য */
+}
+
+.sale-container::-webkit-scrollbar {
+    display: none; /* Chrome/Safari এর জন্য স্ক্রলবার হাইড */
+}
+
+/* স্পেশাল সেল কার্ড */
+.sale-card {
+    position: relative;
+    min-width: 260px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid #f1f2f6;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+}
+
+.sale-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-color: #fab1a0;
+}
+
+.sale-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.sale-card:hover img {
+    transform: scale(1.1);
+}
+
+/* ডিসকাউন্ট ব্যাজ */
+.discount-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #ff7675;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(255, 118, 117, 0.3);
+}
+
+.sale-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2d3436;
+}
+
+/* দামের স্টাইল */
+.sale-price {
+    color: #d63031;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+del {
+    color: #b2bec3;
+    font-size: 15px;
+    margin-right: 8px;
+}
+
+/* সেল বাটন */
+.sale-card button {
+    width: 100%;
+    background: #2d3436;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sale-card button:hover {
+    background: #e67e22; /* আমাদের থিম কালার */
+    box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4);
+}
+
+
+
+
+
+
+
+/* Owner Profile Style */
+.owner-profile {
+    padding: 60px 20px;
+    background: #fdfdfd;
+    display: flex;
+    justify-content: center;
+}
+
+.owner-container {
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    flex-wrap: wrap; /* মোবাইলের জন্য অটো অ্যাডজাস্ট হবে */
+}
+
+.owner-image {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.owner-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%; /* ছবি গোল করার জন্য */
+    border: 5px solid #f1c40f; /* গোল্ডেন বর্ডার */
+    padding: 5px;
+}
+
+.owner-details {
+    flex: 2;
+    min-width: 300px;
+}
+
+.badge-admin {
+    background: #2c3e50;
+    color: #f1c40f;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.owner-details h2 {
+    margin: 15px 0;
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+.owner-bio {
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.owner-meta p {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.signature {
+    margin-top: 25px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.signature h4 {
+    color: #e67e22;
+    font-family: 'cursive', sans-serif; /* সিগনেচার স্টাইল ফন্ট */
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/* BOGO Section Styling */
+.bogo-offers {
+    padding: 60px 20px;
+    background: #fff5f5; /* হালকা লালচে ব্যাকগ্রাউন্ড */
+    text-align: center;
+}
+
+.bogo-title {
+    font-size: 32px;
+    color: #c0392b;
+    margin-bottom: 40px;
+}
+
+.bogo-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bogo-card {
+    background: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px dashed #e74c3c; /* ড্যাশ বর্ডার অফার বোঝাতে */
+    position: relative;
+    transition: 0.3s;
+}
+
+.bogo-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.bogo-tag {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e74c3c;
+    color: white;
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.bogo-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.bogo-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.bogo-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.bogo-card .price {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.bogo-card button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.bogo-card button:hover {
+    background: #c0392b;
+}
+
+
+
+
+.announcement-bar {
+    background: #d63031;
+    color: white;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: bold;
+ 
+}
+
+
+/* --- Final Footer Styling --- */
+.main-footer {
+    background: #1a1a1a;
+    color: #ffffff;
+    padding: 60px 0 20px;
+    margin-top: 50px;
+}
+
+.footer-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-col h3, .footer-col h4 {
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #bdc3c7;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-col ul li:hover {
+    color: #f1c40f;
+    padding-left: 5px;
+}
+
+.footer-subscribe {
+    display: flex;
+    margin-top: 15px;
+}
+
+.footer-subscribe input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 70%;
+}
+
+.footer-subscribe button {
+    background: #f1c40f;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #7f8c8d;
+}
+
+.payment-methods {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    background: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+/* কন্টেইনার সেটআপ */
+.mega-store-viewport {
+    padding: 60px 4%;
+    background-color: #f9fafb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.store-intro-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.store-primary-heading {
+    font-size: 30px;
+    color: #111827;
+}
+
+/* ৪টি সমান কলামের গ্রিড */
+.product-matrix-system {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* কার্ড ডিজাইন */
+.inventory-card-node {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.inventory-card-node:hover {
+    transform: translateY(-8px);
+}
+
+/* ইমেজ বক্স ও হোভার জুম */
+.visual-canvas-frame {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #f3f4f6;
+}
+
+.asset-image-core {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.inventory-card-node:hover .asset-image-core {
+    transform: scale(1.1);
+}
+
+/* প্রাইসিং ডিজাইন (আপনার ছবির মতো) */
+.info-registry-block {
+    padding: 20px;
+    text-align: center;
+}
+
+.entry-label-title {
+    font-size: 1.1rem;
+    color: #374151;
+    margin-bottom: 10px;
+}
+
+.price-logic-stack {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+/* আগের দাম (ধুসর ও কাটা) */
+.old-value-strike {
+    color: #9ca3af;
+    text-decoration: line-through;
+    font-size: 1.1rem;
+}
+
+/* অফার দাম (লাল ও বড়) */
+.new-promo-value {
+    color: #dc2626; /* আপনার আপলোড করা ছবির লাল রঙ */
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+/* বাটন */
+.action-trigger-btn {
+    width: 100%;
+    padding: 12px;
+    background: #1f2937;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* কন্টেইনার ও বাংলা ফন্ট */
+.phone-showcase-wrapper {
+    padding: 70px 5%;
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.phone-header-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.phone-main-title {
+    font-size: 34px;
+    color: #1c1e21;
+    margin-bottom: 12px;
+}
+
+.phone-subtitle {
+    font-size: 18px;
+    color: #606770;
+}
+
+/* ৪টি সমান কলামের গ্রিড সিস্টেম */
+.phone-matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+/* স্মার্টফোন কার্ড ইউনিট */
+.phone-card-unit {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+    transition: all 0.5s ease;
+    border: 1px solid #e1e4e8;
+}
+
+.phone-card-unit:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* ইমেজ কন্টেইনার ও হোভার ইফেক্ট */
+.phone-visual-frame {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.phone-asset-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.phone-card-unit:hover .phone-asset-img {
+    transform: scale(1.15);
+}
+
+/* আপনার আপলোড করা ছবির মতো প্রাইসিং স্টাইল */
+.phone-details-registry {
+    padding: 25px;
+    text-align: center;
+}
+
+.phone-model-name {
+    font-size: 1.2rem;
+    color: #1a202c;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.phone-pricing-logic {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/* আগের দাম (ধুসর ও কাটা) */
+.old-price-strike {
+    color: #b1b1b1;
+    text-decoration: line-through;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* বর্তমান দাম (আপনার ছবির মতো লাল ও বড়) */
+.new-offer-price {
+    color: #df5846; /* আপনার ছবির লাল রঙ */
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+/* কার্ড বাটন */
+.phone-buy-trigger {
+    width: 100%;
+    padding: 12px;
+    background-color: #2d3436;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.phone-buy-trigger:hover {
+    background-color: #df5846;
+}
+
+
+
+
+
+
+
+
+
+
+/* কন্টেইনার স্টাইল */
+.mega-collection-wrapper {
+    padding: 50px 3%;
+    background-color: #fcfcfc;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.collection-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-title {
+    font-size: 32px;
+    color: #222;
+}
+
+.sub-title {
+    color: #666;
+    margin-top: 5px;
+}
+
+/* গ্রিড সিস্টেম - এক লাইনে ৫টি */
+.product-dense-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* কার্ড স্টাইল - ছোট সাইজ */
+.mini-product-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.mini-product-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+}
+
+/* ইমেজ হোভার জুম - সাইজ ১২০পিএক্স */
+.img-container {
+    width: 100%;
+    height: 150px; /* ইমেজের জন্য ছোট জায়গা */
+    overflow: hidden;
+    background: #f9f9f9;
+}
+
+.hover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.mini-product-card:hover .hover-img {
+    transform: scale(1.1);
+}
+
+/* টেক্সট ও প্রাইস স্টাইল */
+.info-box {
+    padding: 12px 5px;
+}
+
+.item-name {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+}
+
+/* আপনার আপলোড করা ছবির মতো লাল ও ধুসর রঙ */
+.old-val {
+    color: #b0b0b0; /* ধুসর */
+    text-decoration: line-through;
+    font-size: 13px;
+}
+
+.new-val {
+    color: #df5846; /* সেই বিশেষ লাল রঙ */
+    font-size: 19px;
+    font-weight: 800;
+}
+
+
+
+
+
+/* কন্টেইনার এবং বাংলা ফন্ট সেটআপ */
+.mega-showroom-suite {
+    padding: 80px 5%;
+    background-color: #fafbfc;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.showroom-header-box {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.showroom-main-title {
+    font-size: 36px;
+    color: #1a202c;
+    margin-bottom: 10px;
+}
+
+.showroom-tagline {
+    font-size: 18px;
+    color: #718096;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ৩টি করে কলামের গ্রিড সিস্টেম */
+.showroom-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* গ্যালারি আইটেম ও হোভার */
+.gallery-item-node {
+    position: relative;
+    height: 300px; /* ইমেজের জন্য পর্যাপ্ত উচ্চতা */
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* ছবিতে হোভার করলে জুম হবে */
+.visual-asset-frame {
+    width: 100%;
+    height: 100%;
+}
+
+.visual-asset-element {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.gallery-item-node:hover .visual-asset-element {
+    transform: scale(1.15); /* জুম ইফেক্ট */
+}
+
+/* ছবির ওপরের টেক্সট ওভারলে */
+.overlay-text-registry {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.overlay-label {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+
+
+/* কন্টাক্ট সেকশন মেইন স্টাইল */
+.mega-contact-suite {
+    padding: 80px 5%;
+    background-color: #f9f9f9;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.suite-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.suite-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.suite-title {
+    font-size: 32px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+/* লেআউট সিস্টেম */
+.suite-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* দুই কলামে বিভক্ত */
+    gap: 40px;
+}
+
+/* ইনফো কার্ড স্টাইল */
+.contact-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+.card-item {
+    margin-bottom: 20px;
+}
+
+.card-item h4 {
+    color: #df5846; /* আপনার থিমের লাল রঙ */
+    margin-bottom: 5px;
+}
+
+/* ফর্ম স্টাইল */
+.contact-form-logic {
+    background: #1f2937; /* আপনার নেভিবার থিমের কালো রঙ */
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form-logic input, 
+.contact-form-logic textarea {
+    padding: 12px 15px;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    background: #111827;
+    color: #fff;
+    outline: none;
+}
+
+.contact-form-logic input:focus {
+    border-color: #df5846;
+}
+
+/* সাবমিট বাটন - আপনার সেল ব্যানারের মতো লাল */
+.submit-trigger-btn {
+    padding: 15px;
+    background: #df5846;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-trigger-btn:hover {
+    background: #b93d2d;
+    transform: translateY(-3px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======================================================
+   ALL DEVICE RESPONSIVE CODE (Mobile, Tablet, Laptop)
+   ======================================================= */
+
+/* ১. বড় ল্যাপটপ বা ডেস্কটপ (১২০০পিক্সেলের বেশি) */
+@media (min-width: 1200px) {
+    .product-dense-grid { grid-template-columns: repeat(5, 1fr); }
+    .phone-matrix-grid, .product-matrix-system { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ২. মাঝারি ল্যাপটপ বা ট্যাবলেট ল্যান্ডস্কেপ (৯৯২px - ১১৯৯px) */
+@media (max-width: 1199px) {
+    header { padding: 15px 30px; }
+    .product-dense-grid { grid-template-columns: repeat(4, 1fr); }
+    .phone-matrix-grid, .product-matrix-system, .showroom-gallery-grid { grid-template-columns: repeat(3, 1fr); }
+    .search-box input { width: 150px; }
+}
+
+/* ৩. ছোট ট্যাবলেট বা বড় মোবাইল (৭৬৮px - ৯৯১px) */
+@media (max-width: 991px) {
+    .nav-links { gap: 10px; }
+    .nav-links a { font-size: 14px; }
+    .suite-layout { grid-template-columns: 1fr; } /* কন্টাক্ট পেজ এক কলামে আসবে */
+    .product-dense-grid { grid-template-columns: repeat(3, 1fr); }
+    .phone-matrix-grid, .product-matrix-system, .showroom-gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .owner-container { flex-direction: column; text-align: center; }
+}
+
+/* ৪. মোবাইল ফোন (৭৬৭px এর নিচে) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* মোবাইলে প্রতি লাইনে ২টা করে পণ্য */
+    .product-dense-grid, 
+    .phone-matrix-grid, 
+    .product-matrix-system, 
+    .showroom-gallery-grid,
+    .grid { 
+        grid-template-columns: repeat(2, 1fr) !important; 
+        gap: 10px; 
+    }
+
+    .banner-content h2 { font-size: 28px; }
+    .banner-content p { font-size: 16px; }
+    
+    .search-box { width: 100%; margin: 10px 0; }
+    .search-box input { width: 80%; }
+
+    .new-val, .new-offer-price { font-size: 1.3rem; } /* দামের সাইজ মোবাইলে ছোট করা */
+    .gallery-item-node { height: 200px; }
+}
+
+/* ৫. অতি ক্ষুদ্র মোবাইল (৪৮০px এর নিচে) */
+@media (max-width: 480px) {
+    /* খুব ছোট ফোনে ১টা করে দেখালে ভালো লাগে */
+    .product-dense-grid, 
+    .phone-matrix-grid, 
+    .product-matrix-system,
+    .bogo-grid { 
+        grid-template-columns: 1fr !important; 
+    }
+    
+    .logo { font-size: 22px; }
+}
+
+
